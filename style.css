@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+header {
+    background-image: linear-gradient (rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagen\1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display:block;
+}
+
+.menu {
+    position:absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu container {
+    font-weight:bolder;
+    font-size: 25px;
+    color: rgb(121, 121, 120);
+    display:block;
+}
+
+.menu .navbar ul {
+    list-style-type:style;
+    display: inline-block;
+}
+
+.menu.navbar .ul .li {
+    position:absolute;
+    float:inline-start;
+}
+
+.menu.navbar.ul.li a {
+    font-size: 26px;
+    padding: 23px;
+    color: rgb(121, 121, 120);
+    display: inline-block;
+}
+
+.menu .navbar ul li a :hover {
+    color: rgb(121, 121, 120);
+}
+
+#menu{
+    
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-text {
+    text-align: center;
+    width: 700px;
+}
+
+.header-text h1 {
+    color: rgb(119, 119, 119);
+    font-size: 66px;
+}
+
+.header-text p {
+    margin-top: 35px;
+    color: rgb(119, 119, 119);
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: rgb(101, 106, 106);
+    margin-top: 35px;
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: aliceblue;
+}
+
+.services {
+    padding: 50px 5px;
+    text-align: center;
+    color: rgb(134, 134, 134);
+}
+
+.services h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+.txt-1 {
+    font-size: 20px;
+    padding: 0px 200px;
+}
+
+.group-services {
+    padding: 30px;
+}
+
+.service {
+    padding: 30px 25 px;
+}
+
+.service img {
+    width: 50px;
+    margin-bottom: 25px;
+}
+
+.service h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.service p {
+    font-size: 18px;
+}
+
+.portafolio {
+    text-align: center;
+    padding: 50px 0px;
+    color: rgb(186, 186, 186);
+}
+
+.portafolio.txt {
+    margin-bottom: 50px;
+}
+
+.portafolio.txt h2 {
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.portafolio.txt p {
+    font-size: 18 px;
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+}
+
+.imgs img {
+    width: 250px;
+    margin: 0px 20px;
+}
+
+.bg-sec {
+    background-image: linear-gradient(rgb(134, 134, 134), rgb(134, 134, 134)), url(imagen\ 4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 35px 0px;
+}
+
+.bg-txt {
+    padding: 100px 0px;
+    text-align: center;
+    color: rgb(191, 192, 192);
+}
+
+.bg-txt h2 {
+    font-size: 55px;
+    margin-bottom: 35px;
+}
+
+.bg-txt p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 150px 0px;
+}
+
+.icono {
+    display: block;
+    font-size: 55px;
+}
+
+
+.slider-frame {
+    width: 1000px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow:auto;
+  
+
+
+    animation: slide 0s infinite alternate ease-in-out;
+}
+
+.slider-frame ul {
+    display:flex;
+    padding: 0;
+    width: 200%;
+
+}
+
+.slider-frame li {
+
+    list-style: none;
+    width: 100%;
+
+}
+
+.slider-frame img {
+    justify-content: center;
+    width: 100%;
+}
+
+@keyframes slide {
+
+    0% {
+        margin-left: 0%;
+    }
+
+    20% {
+        margin-left: 0%;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+}
+
+.resolution{
+    width: 100%;
+    text-align: center;
+}
+
+@media(max-width:767px){ 
+    .desktop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+}
+
+@media(min-width: 768px) and (max-width:990px){
+    .desktop{
+        display: none;
+    }
+    .movil{
+        display: none;
+    }
+}
+
+@media(min-width: 991px) {
+    .tablet{
+        display: none;
+    }
+    .movil{
+        display: none;
+    }
+}
